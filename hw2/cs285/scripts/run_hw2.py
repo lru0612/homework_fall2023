@@ -5,7 +5,6 @@ from cs285.agents.pg_agent import PGAgent
 
 import os
 import time
-
 import gym
 import numpy as np
 import torch
@@ -20,7 +19,6 @@ MAX_NVIDEO = 2
 
 def run_training_loop(args):
     logger = Logger(args.logdir)
-
     # set random seeds
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
